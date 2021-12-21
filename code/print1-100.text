@@ -1,0 +1,8 @@
+An algorithm to print 1 - 100 numbers
+
+
+Number <-- 1
+REPEAT 
+    PRINT Number
+    Number <-- Number + 1
+UNTIL(Number > 100)

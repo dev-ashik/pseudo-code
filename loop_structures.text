@@ -1,0 +1,19 @@
+FOR Counter 1 TO 10
+    PRINT "*"
+NEXT
+
+
+
+Counter <-- 1
+REPEAT
+    PRINT "*"
+    Counter <-- Counter + 1
+UNTIL(Counter <= 10)
+
+
+Counter <-- 1
+WHILE(Counter<=10)
+    PRINT "*"
+    Counter <-- Counter + 1
+ENDWHILE
+

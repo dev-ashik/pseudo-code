@@ -1,0 +1,31 @@
+Conditional statment
+IF____THEN____ELSE____ENDIF
+
+
+Example-1:
+IF Age < 18
+    THEN PRINT "Child"
+    ELSE PRINT "Adult"
+ENDIF
+
+Example-2:
+IF ((Height > 1) OR (Weight > 20) OR (Age > 5)) AND (Age < 70)
+    THEN PRINT "You can ride"
+    ELSE PRINT "Too small, too young or old"
+ENDIF
+
+
+
+_______________________________________
+operation     |   Comparison          |
+    >         |   greater than        |
+    <         |   less then           |
+    =         |   equal               |
+   >=         |   greater than equal  |
+   <=         |   less than equal     |
+   <>         |   not equal           |
+   ()         |   group               |
+   AND        |   both                |
+   OR         |   either              |
+   NOT        |   not                 |
+--------------------------------------|

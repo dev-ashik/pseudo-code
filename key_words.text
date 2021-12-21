@@ -1,0 +1,7 @@
+INPUT and OUTPUT statment
+
+
+INPUT Name
+INPUT StudentMark
+PRINT NamePRINT "Your name is", Name
+OUTPUT Name1, Name2, Name3

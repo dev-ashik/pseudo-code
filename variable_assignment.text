@@ -1,0 +1,17 @@
+variable assignment
+
+Name
+Cost <-- 10
+Price <-- Cost * 2
+
+_______________________________________
+operation     |   Action              |
+    +         |   add                 |
+    -         |   Subtract            |
+    *         |   maltiply            |
+    /         |   divide              |
+    ^         |   raise to the power  |
+    ()        |   group               |
+--------------------------------------|
+
+
