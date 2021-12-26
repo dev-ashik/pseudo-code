@@ -1,0 +1,38 @@
+MergeSort(myList)
+    if length(myList) > 1
+        THEN mid <- length(myList) // 2
+            left = myList[:mid]
+            right = myList[mid:]
+
+            MergeSort(left)
+            MergeSort(right)
+
+            i <- 0
+            j <- 0
+            k <- 0
+
+            WHILE (i<length(left) AND j<length(right))
+                IF left[i] <= right[j]
+                    THEN myList[k] = left[i]
+                        i <- i+1
+                ELSE
+                    myList[k] = right[j]
+                    j <- j+1
+                ENDIF
+                k <- k+1
+            ENDWHILE
+
+            WHILE (i < length(left))
+                myList[k] = left[i]
+                i <- i+1
+                k <- k+1
+            ENDWHILE
+
+            WHILE (j < length(right))
+                myList[k] = right[j]
+                j <- j+1
+                k <- k+1
+            ENDWHILE
+    ENDIF
+
+
