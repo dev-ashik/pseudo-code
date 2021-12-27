@@ -111,6 +111,9 @@ delete
 
 
 5. Heap Sort
+
+  time complexcity = O(nlogn)
+
    10, 20, 15, 30, 40
    
           |10|                 

@@ -1,0 +1,8 @@
+time O(nlogn)
+
+Heapsort(A)
+  Build-Max-Heap(A)
+  for i <- length[A] downto 2
+     do exchange A[1] <-> A[i]
+     heap-size[A] <- heap-size[A]-1
+     Max-Heapify(A,1)
