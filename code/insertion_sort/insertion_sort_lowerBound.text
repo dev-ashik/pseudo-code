@@ -1,0 +1,11 @@
+insertion sort lower bound
+
+Insertion-Sort(A)
+    FOR j <- 2 to length(A)
+        DO key <- A[j]
+           i <- j-1
+           WHILE i>0 AND A[i] > key
+              DO A[i+1] <- A[i]
+                 i <- i-1
+           ENDWHILE
+           A[i+1] <- key

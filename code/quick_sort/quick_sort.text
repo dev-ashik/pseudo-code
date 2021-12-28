@@ -1,0 +1,5 @@
+QuickSort(A, p, r)
+  IF p<r
+    THEN q <- Partition(A, p, r)
+        QuickSort(A, p, q-1)
+        QuickSort(A, q+1, r)

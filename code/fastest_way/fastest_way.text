@@ -1,0 +1,18 @@
+Fastest_Way(A, t, e, x, n)
+  f1[1] <- e1 + a1,1
+  f2[1] <- e2 + a2,1
+  FOR j <- 2 to n
+    DO IF f1[j-1]+a1,j <= f2[j-1]+t2,j-1 + a1,j
+         THEN f1[j] <- f1[j-1]+a1,j
+              l1[j] <- 1
+         ELSE f1[j] <- f2[j-1] + t2,j-1 + a1,j
+       IF f2[j-1]+a2,j <= f1[j-1] + t1,j-1 + a2,j
+         THEN f2[j] <- f2[j-1]+a2,j
+              l2[j] <- 2
+         ELSE f2[j] <- f1[j-1]+t1,j-1+a2,j
+         l2[j] <- 1
+  IF f1[n] + x1 <= f2[n] + x2
+     THEN f* = f1[n] + x1
+          l* = 1
+     ELSE f* = f2[n] + x2
+          l* = 2
