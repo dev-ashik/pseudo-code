@@ -1,0 +1,11 @@
+Recursive_Matrix_Chain(p, i, j)
+    IF i = j
+       THEN RETURN 0
+    m[i, i] <- infinity
+    FOR k <- i to j-1
+        DO q <- Recursive_Matrix_Chain(p, i, k)
+            + Recursive_Matrix_Chain(p, k+1, j)
+            + pi-1 pk pj
+        IF q < m[i, j]
+           THEN m[i,j] <- q
+    RETURN m[i, j]

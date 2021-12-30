@@ -1,0 +1,20 @@
+Memoized_Matrix_chain(p)
+  n <- length[p] - 1
+  FOR i <- 1 to n
+      DO FOR j <- i to n
+             DO m[i, j] <- infinity
+  RETURN Lookup_Chain(p, 1, n)
+
+
+
+Lookup_Chain(p, i, j)
+  IF m[i, j] < infinity
+     THEN RETURN m[i, j]
+  IF i=j
+     THEN m[i, j] <- 0
+     ELSE FOR k <- i to j-1
+              DO q <- Lookup_Chain(p, i, k)
+                      + Lookup_Chain(p, k+1, j) + pi-1 pk pj
+                 IF q < m[i, j]
+                    THEN m[i, j] <- q
+  RETURN m[i, j]
