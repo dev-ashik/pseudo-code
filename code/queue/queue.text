@@ -1,0 +1,13 @@
+Enqueue(Q, X)
+   Q[tail[Q]] <- x 
+   IF tail[Q] = lenght[Q]
+      THEN tail[Q] <- 1
+      ELSE tail[Q] <- tail[Q] + 1
+
+
+Delqueue(Q)
+   X <- Q[head[Q]]
+   IF head[Q] = lenght[Q]
+      THEN head[Q] <- 1
+      ELSE head[Q] <- head[Q] + 1
+   RETURN X

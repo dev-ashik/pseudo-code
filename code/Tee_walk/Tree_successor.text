@@ -1,0 +1,8 @@
+Tree_successor(x)
+    IF right[x] <> Nil
+       THEN RETURN Tree_successor(right[x])
+    y <- p[x]
+    WHILE y<>Nil and x=right[y] 
+          DO x <- y
+             y <- p[y]
+    RETURN y

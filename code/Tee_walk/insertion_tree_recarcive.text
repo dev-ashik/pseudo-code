@@ -1,0 +1,12 @@
+Tree_insert(z,k)
+   INPUT A node z and value k.
+   OUTPUT The binary tree with k inserted.
+   IF x = nil 
+      THEN key[z] <- key
+           left[z] <- nil
+           right[z] <- nill
+    ELSE IF k < key[z]
+            THEN Tree_insert(left[z], k)
+            ELSE Tree_insert(right[z], k)
+         IND IF
+    ENDIF

@@ -1,0 +1,6 @@
+Iterate_Tree_Search()
+    WHILE x <> nill and k <> key[x] 
+      DO IF k < key[x]
+         THEN x <- left[x]
+         ELSE x <- right[x]
+    RETURN x

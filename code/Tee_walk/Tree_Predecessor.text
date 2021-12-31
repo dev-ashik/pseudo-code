@@ -1,0 +1,8 @@
+Tree_Predecessor(X)
+    IF left[X] <> nill
+        THEN RETURN Tree_Maximum(left[x])
+    y <- p[X]
+    WHILE y <> Nill and X=right[y]
+        DO X <- y
+           y <- p[y]
+    RETURN y

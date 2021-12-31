@@ -1,0 +1,18 @@
+Tree_Delete(T, z)
+    IF left[z] = NIl OR right[z] = NIl
+        THEN y <- z
+        ELSE y <- Tree_Successor(z)
+    IF left[y] <> NIl
+        THEN x <- left[y]
+        ELSE x <- right[y]
+    IF x <> NIl
+        THEN p[x] <- p[y]
+    IF p[y] = NIl  
+        THEN root[T] <- x
+        ELSE IF y = left[p[y]]
+                THEN left[p[y]] <- x
+                ELSE right[p[y]] <- x
+    IF y <> z
+       THEN key[z] <- key[y]
+           copy y's stellite data into z
+    RETURN y

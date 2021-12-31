@@ -1,0 +1,18 @@
+Tree_Insert(T, v)
+    y <- Nil
+    x <- root[T]
+    while x<> Nil 
+        DO y <- x
+           IF key[v] < key[x]
+              THEN x <- left[x]
+              ELSE x <- right[x]
+    p[v] <- y
+    IF y=Nil
+        THEN root[T] <- v
+        ELSE IF key[v] < key[y]
+             THEN left[y] <- v
+             else right[y] <- v 
+
+
+
+runing time O(h). Tree height h

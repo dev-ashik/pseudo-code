@@ -1,0 +1,6 @@
+recursive for LCS
+
+LCS(x, y, i, j)
+  IF x[i] = y[j]
+     THEN c[i, j] <- LCS(x, y, i-1, j-1) + 1
+     ELSE c[i, j] < max{LCS(x, y, i-1, j) LCS(x, y, i, j-1)}

@@ -1,0 +1,3 @@
+WHILE right[x] <> nill 
+    DO x <- right[x]
+RETURN x

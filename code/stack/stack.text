@@ -1,0 +1,16 @@
+stack operations
+
+STACK-EMPTY(S)
+  IF top[S] = 0
+    THEN RETURN TRUE
+    ELSE RETURN FALSE
+
+PUSH(S, X)
+  top[S] <- top[S] + 1
+  S[top[S]] <- X
+
+POP(S)
+    IF STACK-EMPTY(S)
+      THEN ERROR "underflow"
+      ELSE top[S] <- top[S] - 1
+        RETURN S[top[S] + 1]

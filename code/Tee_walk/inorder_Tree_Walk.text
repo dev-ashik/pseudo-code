@@ -1,0 +1,7 @@
+Inorder_Tree_Walk(X)
+    IF X <> nil      # <> not equal
+      THEN Inorder_Tree_Walk(left[X])
+          PRINT key[X]
+          Inorder_Tree_Walk(right[x])
+
+takes time O(n)

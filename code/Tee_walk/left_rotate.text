@@ -1,0 +1,12 @@
+Left_Rotate(T, x)
+    y <- right[x]
+    right <- left[y]
+    p[left[y]] <- x
+    p[y] <- p[x]
+    IF p[x] = nil[T]
+        THEN root[T] <- y
+        ELSE IF x = left[p[x]]
+             THEN left[p[x]] <- y
+             else right[p[x]] <- y
+    left[y] <- x    #put x on y's left
+    p[x] <- y
