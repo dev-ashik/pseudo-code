@@ -1,0 +1,41 @@
+V 9
+minDistance(int dist[], bool sptSet[])
+    min <-- INT_MAX, min_index;
+ 
+    FOR (int v = 0; v < V; v++)
+        IF (sptSet[v] = false && dist[v] <= min)
+            min <-- dist[v], min_index = v;
+ 
+    RETURN min_index;
+
+ 
+PRINT Solution(int dist[])
+    PRINT("Vertex Distance from Source");
+    FOR i <- 0  TO i < V
+        PRINT("%d \t\t %d\n", i, dist[i]);
+
+
+dijkstra(int graph[V][V], int src)
+    dist[V];
+    
+    sptSet[V];
+    
+    fint i <-- 0 TO i < V
+        dist[i] <-- INT_MAX, sptSet[i] <-- false;
+ 
+    dist[src] <-- 0;
+ 
+    for count <-- 0 TO count < V - 1
+         u <-- minDistance(dist, sptSet);
+ 
+        sptSet[u] <-- true;
+ 
+        for  v <-- 0 To v < V
+           if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX
+                && dist[u] + graph[u][v] < dist[v])
+                dist[v] = dist[u] + graph[u][v];
+    
+ 
+    PRINT Solution(dist);
+
+ 
